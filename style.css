@@ -13,7 +13,7 @@ h1.title {
     background-color: gray;
 }
 
-form[name="add-todo"] {
+div.add-todo {
     width: 100vw;
     display: flex;
     justify-content: center;
