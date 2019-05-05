@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-h1.title {
+h1#title {
     width: 100vw;
     text-align: center;
     vertical-align: middle;
@@ -13,7 +13,7 @@ h1.title {
     background-color: gray;
 }
 
-div.add-todo {
+div#add-todo {
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -21,12 +21,12 @@ div.add-todo {
     padding: 10px 0;
 }
 
-form>button.add-button,
-form>input[name="new-todo"] {
+button#add-button,
+input#todo-input {
     padding: 5px;
 }
 
-ul.todo-list {
+ul#todo-list {
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -39,10 +39,10 @@ li.todo-list-item {
 }
 
 @media screen and (max-width: 600px) {
-    form>button.add-button {
+    button#add-button {
         width: 10vw;
     }
-    form>input[name="new-todo"] {
+    input#todo-input {
         width: 80vw;
     }
     li.todo-list-item {
@@ -51,10 +51,10 @@ li.todo-list-item {
 }
 
 @media screen and (min-width: 600px) {
-    form>button.add-button {
+    button#add-button {
         width: 60px;
     }
-    form>input[name="new-todo"] {
+    input#todo-input {
         width: 480px;
     }
     li.todo-list-item {
