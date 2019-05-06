@@ -1,32 +1,32 @@
-const input = document.getElementById('todo-input')
-const button = document.getElementById('add-button')
-const list = document.getElementById('todo-list')
+const inputElement = document.getElementById('todo-input')
+const buttonElement = document.getElementById('add-button')
+const listElement = document.getElementById('todo-list')
 const template = document.getElementById('todo-template')
 
 const addTODO = (text) => {
   template.content.querySelector('div.todo-text').innerText = text
   const todo = document.importNode(template.content, true)
-  const deleteTODO = event => { list.removeChild(event.target.parentNode) }
+  const deleteTODO = event => { listElement.removeChild(event.target.parentNode) }
   todo.querySelector('button.delete-button')
     .addEventListener('click', deleteTODO, { once: true, passive: true })
-  list.appendChild(todo)
+  listElement.appendChild(todo)
 }
 
-input.addEventListener('keydown', event => {
+inputElement.addEventListener('keydown', event => {
   if (event.key !== 'Enter') return
-  if (input.value === '') return
-  addTODO(input.value)
-  input.value = ''
+  if (inputElement.value === '') return
+  addTODO(inputElement.value)
+  inputElement.value = ''
 })
 
-button.addEventListener('click', () => {
-  if (input.value === '') return
-  addTODO(input.value)
-  input.value = ''
+buttonElement.addEventListener('click', () => {
+  if (inputElement.value === '') return
+  addTODO(inputElement.value)
+  inputElement.value = ''
 })
 
 for (const text of ['1st Task', '2nd Task', '3rd Task']) {
   addTODO(text)
 }
 
-input.focus()
+inputElement.focus()
