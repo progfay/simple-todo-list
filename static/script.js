@@ -8,6 +8,17 @@ const template = document.getElementById('todo-template')
 
 const addTODO = (text, checked) => {
   const todo = document.importNode(template.content, true)
+
+  const toggleCheck = event => {
+    const { parentNode, checked } = event.target
+    const id = parentNode.querySelector('input.todo-id').value
+    const index = Array.from(listElement.children)
+      .findIndex(child => child.querySelector('input.todo-id').value === id)
+    const todoList = JSON.parse(localStorage.getItem('todoList'))
+    todoList[index].checked = checked
+    localStorage.setItem('todoList', JSON.stringify(todoList))
+  }
+
   const deleteTODO = event => {
     const { parentNode } = event.target
     const id = parentNode.querySelector('input.todo-id').value
@@ -16,11 +27,14 @@ const addTODO = (text, checked) => {
     const todoList = JSON.parse(localStorage.getItem('todoList'))
     todoList.splice(index, 1)
     localStorage.setItem('todoList', JSON.stringify(todoList))
+    parentNode.querySelector('input.todo-checkbox').removeEventListener('click', toggleCheck)
     listElement.removeChild(parentNode)
   }
   todo.querySelector('div.todo-text').innerText = text
   todo.querySelector('input.todo-checkbox').checked = checked
   todo.querySelector('input.todo-id').value = generateID()
+  todo.querySelector('input.todo-checkbox')
+    .addEventListener('click', toggleCheck, { once: false, passive: true })
   todo.querySelector('button.delete-button')
     .addEventListener('click', deleteTODO, { once: true, passive: true })
   listElement.appendChild(todo)
