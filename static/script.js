@@ -28,5 +28,3 @@ buttonElement.addEventListener('click', () => {
 for (const text of ['1st Task', '2nd Task', '3rd Task']) {
   addTODO(text)
 }
-
-inputElement.focus()
