@@ -11,17 +11,17 @@
 
 <body>
     <h1 id="title"> Simple TODO List </h1>
-    <div id="add-todo">
+    <label id="add-todo">
         <input type="text" name="new-todo" id="todo-input" placeholder="New TODO">
         <button type="button" id="add-button" onclick=""> add </button>
-    </div>
+    </label>
     <ul id="todo-list"></ul>
     <template id="todo-template">
         <li class="todo-list-item">
-            <div class="todo-content">
+            <label class="todo-content">
                 <input type="checkbox" class="todo-checkbox">
                 <div class="todo-text"> TODO </div>
-            </div>
+            </label>
             <button type="button" class="delete-button"> delete </button>
         </li>
     </template>
