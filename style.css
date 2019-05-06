@@ -50,6 +50,11 @@ div.todo-text {
     margin-left: 5px;
 }
 
+input.todo-checkbox:checked+div.todo-text {
+    color: gray;
+    text-decoration: line-through;
+}
+
 @media screen and (max-width: 600px) {
     button#add-button {
         width: 10vw;
