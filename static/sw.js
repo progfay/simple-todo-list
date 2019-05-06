@@ -26,7 +26,7 @@ self.addEventListener('message', (event) => {
  */
 self.__precacheManifest = [
   {
-    'url': 'favicon.ico',
+    'url': 'images/icons/favicon.ico',
     'revision': 'cf730f14d4a292a2e851507365ed4eef'
   },
   {
