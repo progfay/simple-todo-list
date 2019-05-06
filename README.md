@@ -8,7 +8,7 @@ https://simple-todo-list.progfay.now.sh/
 ## Deploy
 
 ```sh
-now --public
+now --public static
 ```
 
 
