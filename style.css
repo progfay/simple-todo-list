@@ -32,10 +32,22 @@ ul#todo-list {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    list-style-type: none;
 }
 
 li.todo-list-item {
     margin: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.todo-content {
+    display: flex;
+    align-items: center;
+}
+
+div.todo-text {
+    margin-left: 5px;
 }
 
 @media screen and (max-width: 600px) {

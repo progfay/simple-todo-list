@@ -16,9 +16,27 @@
         <button type="button" id="add-button" onclick=""> add </button>
     </div>
     <ul id="todo-list">
-        <li class="todo-list-item"> 1st Task </li>
-        <li class="todo-list-item"> 2nd Task </li>
-        <li class="todo-list-item"> 3rd Task </li>
+        <li class="todo-list-item">
+            <div class="todo-content">
+                <input type="checkbox" class="todo-checkbox">
+                <div class="todo-text"> 1st Task </div>
+            </div>
+            <button type="button" class="delete-button"> delete </button>
+        </li>
+        <li class="todo-list-item">
+            <div class="todo-content">
+                <input type="checkbox" class="todo-checkbox">
+                <div class="todo-text"> 2nd Task </div>
+            </div>
+            <button type="button" class="delete-button"> delete </button>
+        </li>
+        <li class="todo-list-item">
+            <div class="todo-content">
+                <input type="checkbox" class="todo-checkbox">
+                <div class="todo-text"> 3rd Task </div>
+            </div>
+            <button type="button" class="delete-button"> delete </button>
+        </li>
     </ul>
     <script src="script.js"></script>
 </body>
