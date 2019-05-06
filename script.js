@@ -6,10 +6,9 @@ const template = document.getElementById('todo-template')
 const addTODO = (text) => {
   template.content.querySelector('div.todo-text').innerText = text
   const todo = document.importNode(template.content, true)
+  const deleteTODO = event => { list.removeChild(event.target.parentNode) }
   todo.querySelector('button.delete-button')
-    .addEventListener('click', event => {
-      list.removeChild(event.target.parentNode)
-    }, { once: true, passive: true })
+    .addEventListener('click', deleteTODO, { once: true, passive: true })
   list.appendChild(todo)
 }
 
