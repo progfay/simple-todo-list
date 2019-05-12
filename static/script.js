@@ -35,7 +35,8 @@ const deleteTodo = event => {
 
 const addTodo = ({ text, checked }) => {
   const todo = document.importNode(template.content, true)
-  todo.querySelector('div.todo-text').innerText = text
+  const textNode = document.createTextNode(text)
+  todo.querySelector('div.todo-text').appendChild(textNode)
   todo.querySelector('input.todo-checkbox').checked = checked
   todo.querySelector('input.todo-id').value = generateID()
   todo.querySelector('input.todo-checkbox')
