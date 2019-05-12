@@ -12,8 +12,12 @@
 
 html,
 body {
+    width: 100vw;
+    height: 100vh;
     background: #354d62;
     color: #d7f2f7;
+    overflow: hidden;
+    overscroll-behavior: none;
 }
 
 button {
@@ -35,15 +39,15 @@ button:hover {
 
 header#header {
     width: 100vw;
-    height: 30vmin;
+    height: 25vmin;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 div#icon {
-    width: 30vmin;
-    height: 30vmin;
+    width: 25vmin;
+    height: 25vmin;
     background-image: url('/images/icons/icon-512x512.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -51,10 +55,10 @@ div#icon {
 
 label#add-todo {
     width: 100vw;
+    height: 10vmin;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 0;
 }
 
 input#todo-input {
@@ -82,11 +86,13 @@ button#add-button {
 
 ul#todo-list {
     width: 100vw;
+    height: calc(100vh - 35vmin);
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     list-style-type: none;
+    overflow-y: scroll;
 }
 
 li.todo-list-item {
