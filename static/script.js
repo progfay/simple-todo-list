@@ -49,7 +49,7 @@ const addTodo = ({ text, checked }) => {
 const onAddTodo = event => {
   if (event.key && event.key !== 'Enter') return
   if (inputElement.value === '') return
-  addTodo(inputElement.value, false)
+  addTodo({ text: inputElement.value, checked: false }, false)
   controlLocalStorage(todoList => { todoList.push({ text: inputElement.value, checked: false }) })
   inputElement.value = ''
 }
