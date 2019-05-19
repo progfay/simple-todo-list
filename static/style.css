@@ -84,7 +84,7 @@ button#add-button {
     padding: 4px;
 }
 
-ul#todo-list {
+todo-list {
     width: 100vw;
     height: calc(100vh - 35vmin);
     display: flex;
@@ -95,7 +95,7 @@ ul#todo-list {
     overflow-y: scroll;
 }
 
-li.todo-list-item {
+todo-list-item {
     margin: 5px;
     display: flex;
     justify-content: space-between;
@@ -164,7 +164,7 @@ input.todo-checkbox:checked+div.todo-text {
     input#todo-input {
         width: 80vw;
     }
-    li.todo-list-item {
+    todo-list-item {
         width: 80vw;
     }
 }
@@ -176,7 +176,7 @@ input.todo-checkbox:checked+div.todo-text {
     input#todo-input {
         width: 480px;
     }
-    li.todo-list-item {
+    todo-list-item {
         width: 480px;
     }
 }

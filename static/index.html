@@ -33,16 +33,13 @@
         <input type="text" name="new-todo" id="todo-input" placeholder="New TODO" autofocus autocomplete="off">
         <button type="button" id="add-button" onclick=""> add </button>
     </label>
-    <ul id="todo-list" is="todo-list"></ul>
+    <todo-list id="todo-list"></todo-list>
     <template id="todo-template">
-        <li class="todo-list-item">
-            <label class="todo-content">
-                <input type="checkbox" class="todo-checkbox">
-                <div class="todo-text"></div>
-                <input type="hidden" class="todo-id" value="">
-            </label>
-            <button type="button" class="delete-button"> delete </button>
-        </li>
+        <label class="todo-content">
+            <input type="checkbox" class="todo-checkbox">
+            <div class="todo-text"></div>
+        </label>
+        <button type="button" class="delete-button"> delete </button>
     </template>
     <script src="script/util.js"></script>
     <script src="script/todo-list-item.js"></script>

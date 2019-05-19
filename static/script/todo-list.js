@@ -1,6 +1,6 @@
-/* global generateID, localStorage, TodoListItem, HTMLUListElement, customElements */
+/* global generateID, localStorage, TodoListItem, HTMLElement, customElements */
 
-class TodoList extends HTMLUListElement {
+class TodoList extends HTMLElement {
   connectedCallback () {
     if (!('todoList' in localStorage)) {
       localStorage.setItem('todoList', JSON.stringify(
@@ -24,4 +24,4 @@ class TodoList extends HTMLUListElement {
   }
 }
 
-customElements.define('todo-list', TodoList, { extends: 'ul' })
+customElements.define('todo-list', TodoList)

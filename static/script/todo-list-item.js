@@ -19,7 +19,6 @@ class TodoListItem extends HTMLElement {
     const textNode = document.createTextNode(text)
     todo.querySelector('div.todo-text').appendChild(textNode)
     todo.querySelector('input.todo-checkbox').checked = checked
-    todo.querySelector('input.todo-id').value = generateID()
     todo.querySelector('input.todo-checkbox')
       .addEventListener('click', this.toggleCheck, { once: false, passive: true })
     todo.querySelector('button.delete-button')
