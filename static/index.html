@@ -33,7 +33,7 @@
         <input type="text" name="new-todo" id="todo-input" placeholder="New TODO" autofocus autocomplete="off">
         <button type="button" id="add-button" onclick=""> add </button>
     </label>
-    <ul id="todo-list"></ul>
+    <ul id="todo-list" is="todo-list"></ul>
     <template id="todo-template">
         <li class="todo-list-item">
             <label class="todo-content">
@@ -44,7 +44,10 @@
             <button type="button" class="delete-button"> delete </button>
         </li>
     </template>
-    <script src="script.js"></script>
+    <script src="script/util.js"></script>
+    <script src="script/todo-list-item.js"></script>
+    <script src="script/todo-list.js"></script>
+    <script src="script/index.js"></script>
     <script type="text/javascript">
         if ("serviceWorker" in navigator) {
             navigator.serviceWorker.register("/sw.js")
