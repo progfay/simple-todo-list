@@ -1,3 +1,5 @@
+/* global importScripts, self, workbox */
+
 /**
  * Welcome to your Workbox-powered service worker!
  *
@@ -63,23 +65,35 @@ self.__precacheManifest = [
   },
   {
     'url': 'index.html',
-    'revision': 'a97848e0dc00aa0b9ea972f805d3ab20'
+    'revision': 'db670f21af7639470bd7f9407747f810'
   },
   {
     'url': 'manifest.json',
-    'revision': '8703baed2180fd1f9e74261e76fe3d62'
+    'revision': '6c7b98ba031dd8be76dbfe6f47b10542'
   },
   {
-    'url': 'script.js',
-    'revision': '17f30937c13de5def0ea7fc7eba9d391'
+    'url': 'script/index.js',
+    'revision': 'b2a2ef2f66aa4b8527263b344e9e5b82'
+  },
+  {
+    'url': 'script/todo-list-item.js',
+    'revision': '6cb0ee42d7bc2bb224c1de251cbecfc5'
+  },
+  {
+    'url': 'script/todo-list.js',
+    'revision': '957c2b8a713f122fe6ed5dff02def938'
+  },
+  {
+    'url': 'script/util.js',
+    'revision': '3eb74228f7ba1624ce7788fa6989f1d9'
   },
   {
     'url': 'style.css',
-    'revision': '0b66ca193415a3c952ddb7ccfffae44f'
+    'revision': 'a0acf6555fe21249ecfce2d9e744102c'
   },
   {
     'url': 'workbox-config.js',
-    'revision': 'abdddb53d25dc30638c17c729df536e3'
+    'revision': 'b491607d4e8f3af0bf3684b3a9c556b2'
   }
 ].concat(self.__precacheManifest || [])
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {})
