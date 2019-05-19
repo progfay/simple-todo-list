@@ -27,7 +27,9 @@ class TodoListItem extends HTMLElement {
     this.append(todo)
 
     controlLocalStorage(todoList => {
-      if (!todoList.find(todo => todo.id === id)) todo.push({ id, text, checked })
+      if (!todoList.find(todo => todo.id === id)) {
+        todoList.push({ id, text, checked })
+      }
       return todoList
     })
   }
@@ -40,17 +42,19 @@ class TodoListItem extends HTMLElement {
   toggleCheck () {
     this.checked = !this.checked
     this.querySelector('input.todo-checkbox').checked = this.checked
-    controlLocalStorage(todoList => {
+    controlLocalStorage(todoList =>
       todoList.map(todo => {
         if (todo.id === this.id) todo.checked = this.checked
         return todo
       })
-    })
+    )
   }
 
   deleteTodo (event) {
     this.remove()
-    controlLocalStorage(todoList => todoList.filter(todo => todo.id !== this.id))
+    controlLocalStorage(todoList =>
+      todoList.filter(todo => todo.id !== this.id)
+    )
   }
 }
 
