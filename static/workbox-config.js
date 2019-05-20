@@ -1,10 +1,12 @@
 module.exports = {
   'globDirectory': '.',
   'globPatterns': [
-    '**/*.{ico,png,html,json,js,css}'
+    '**/*.{ico,html,json,js,css}',
+    'images/icons/icon-512x512.png'
   ],
   'globIgnores': [
-    'now.json'
+    'now.json',
+    'workbox-config.js'
   ],
   'swDest': 'sw.js'
 }
