@@ -1,0 +1,24 @@
+{
+  "name": "simple-todo-list",
+  "version": "1.0.0",
+  "description": "Simple TODO List Application",
+  "scripts": {
+    "sw": "workbox generateSW workbox-config.js",
+    "predeploy": "now rm simple-todo-list --yes",
+    "deploy": "now --public static"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/progfay/simple-todo-list.git"
+  },
+  "author": "progfay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/progfay/simple-todo-list/issues"
+  },
+  "homepage": "https://github.com/progfay/simple-todo-list#readme",
+  "devDependencies": {
+    "now": "^15.2.0",
+    "workbox-cli": "^4.3.1"
+  }
+}
