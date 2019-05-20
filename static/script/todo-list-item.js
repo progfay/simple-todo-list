@@ -1,4 +1,13 @@
-/* global generateID, updateLocalStorage, HTMLElement, customElements */
+/* global localStorage, HTMLElement, customElements */
+
+const generateID = () => Math.random().toString(36).substr(2, 10)
+
+const updateLocalStorage = update => {
+  const todoList = localStorage.getItem('todoList') || '[]'
+  const updated = JSON.stringify(update(JSON.parse(todoList)))
+  if (todoList === updated) return
+  localStorage.setItem('todoList', updated)
+}
 
 const template = document.getElementById('todo-list-item-template').content
 

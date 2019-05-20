@@ -1,20 +1,10 @@
-/* global generateID, localStorage, TodoListItem, HTMLElement, customElements */
+/* global localStorage, TodoListItem, HTMLElement, customElements */
 
 class TodoList extends HTMLElement {
   connectedCallback () {
-    if (!('todoList' in localStorage)) {
-      localStorage.setItem('todoList', JSON.stringify(
-        [
-          { id: generateID(), text: '1st Task', checked: false },
-          { id: generateID(), text: '2nd Task', checked: false },
-          { id: generateID(), text: '3rd Task', checked: false }
-        ]
-      ))
-    }
+    const todoList = JSON.parse(localStorage.getItem('todoList') || '[]')
 
-    this.todoList = JSON.parse(localStorage.getItem('todoList'))
-
-    for (const todo of this.todoList) {
+    for (const todo of todoList) {
       this.addTodo(todo)
     }
   }

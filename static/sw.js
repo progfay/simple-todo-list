@@ -33,7 +33,7 @@ self.__precacheManifest = [
   },
   {
     'url': 'index.html',
-    'revision': '536984d64dbc30ae8004cb50188df47f'
+    'revision': '502ee2199ff45cc715202f9f879eb9f3'
   },
   {
     'url': 'manifest.json',
@@ -45,15 +45,11 @@ self.__precacheManifest = [
   },
   {
     'url': 'script/todo-list-item.js',
-    'revision': '634d9b6170e8ae97e90fea108f1dfd9d'
+    'revision': '79b5f2597a13651c71388acae13e2704'
   },
   {
     'url': 'script/todo-list.js',
-    'revision': 'b1da7bbe0bf6447f29d109cac2b7375c'
-  },
-  {
-    'url': 'script/util.js',
-    'revision': '6f054cc5bc51772b63984483229654e6'
+    'revision': '01756b3969c85e37f044c39a84271c35'
   },
   {
     'url': 'style.css',
