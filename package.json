@@ -16,6 +16,7 @@
     "build:sw": "uglifyjs --compress --mangle -o dist/sw.js static/sw.js",
     "build:js": "for file in $(ls static/script); do uglifyjs --compress --mangle -o dist/script/$file static/script/$file; done",
     "build:json": "./node_modules/node-jq/bin/jq -c '' static/manifest.json > dist/manifest.json",
+    "build:now": "cp now.json dist/now.json",
     "dev": "cross-env NODE_ENV=development node index.js",
     "start": "cross-env NODE_ENV=production node index.js"
   },

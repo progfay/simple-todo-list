@@ -6,8 +6,5 @@ module.exports = {
     'images/checkbox-checked.png',
     'images/logo.png'
   ],
-  'globIgnores': [
-    'now.json'
-  ],
   'swDest': 'static/sw.js'
 }
