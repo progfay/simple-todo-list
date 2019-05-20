@@ -33,7 +33,7 @@ self.__precacheManifest = [
   },
   {
     'url': 'index.html',
-    'revision': 'd5ed23651ac9be2108d0e1166474a70a'
+    'revision': 'd654b1c002febe3e144d023ccf101635'
   },
   {
     'url': 'manifest.json',
@@ -53,7 +53,7 @@ self.__precacheManifest = [
   },
   {
     'url': 'style.css',
-    'revision': '2a3d8809c898a56853b2ce3f1c1bc709'
+    'revision': '4382718df31799b58580954a951e75ec'
   },
   {
     'url': 'images/checkbox.png',
