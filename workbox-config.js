@@ -1,5 +1,5 @@
 module.exports = {
-  'globDirectory': '.',
+  'globDirectory': 'static',
   'globPatterns': [
     '**/*.{ico,html,json,js,css}',
     'images/icons/icon-512x512.png'
@@ -8,5 +8,5 @@ module.exports = {
     'now.json',
     'workbox-config.js'
   ],
-  'swDest': 'sw.js'
+  'swDest': 'static/sw.js'
 }
