@@ -2,11 +2,11 @@
 
 ![thumbnail](https://gyazo.com/348ed44d71c2604ddfa2858e3a770aeb.png)
 
-<center align="center">
+<div align="center">
   <strong>
     <a href="https://simple-todo-list.progfay.now.sh">https://simple-todo-list.progfay.now.sh</a>
   </strong>
-</center>
+</div>
 
 
 ## Usage
