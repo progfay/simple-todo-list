@@ -29,12 +29,15 @@
     <header id="header">
         <div id="icon"></div>
     </header>
-    <label id="add-todo">
-        <input type="text" name="new-todo" id="todo-input" placeholder="New TODO" autofocus autocomplete="off">
-        <button type="button" id="add-button" onclick=""> add </button>
-    </label>
+    <todo-form id="todo-form"></todo-form>
     <todo-list id="todo-list"></todo-list>
-    <template id="todo-template">
+    <template id="todo-form-template">
+        <label id="add-todo">
+            <input type="text" name="new-todo" id="todo-input" placeholder="New TODO" autofocus autocomplete="off">
+            <button type="button" id="add-button" onclick=""> add </button>
+        </label>
+    </template>
+    <template id="todo-list-item-template">
         <label class="todo-content">
             <input type="checkbox" class="todo-checkbox">
             <div class="todo-text"></div>
@@ -44,7 +47,7 @@
     <script src="script/util.js"></script>
     <script src="script/todo-list-item.js"></script>
     <script src="script/todo-list.js"></script>
-    <script src="script/index.js"></script>
+    <script src="script/todo-form.js"></script>
     <script type="text/javascript">
         if ("serviceWorker" in navigator) {
             navigator.serviceWorker.register("/sw.js")

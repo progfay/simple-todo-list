@@ -1,6 +1,6 @@
 /* global generateID, updateLocalStorage, HTMLElement, customElements */
 
-const template = document.getElementById('todo-template').content
+const template = document.getElementById('todo-list-item-template').content
 
 class TodoListItem extends HTMLElement {
   constructor ({ id = generateID(), text = '', checked = false }) {

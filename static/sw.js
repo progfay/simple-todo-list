@@ -65,35 +65,35 @@ self.__precacheManifest = [
   },
   {
     'url': 'index.html',
-    'revision': 'db670f21af7639470bd7f9407747f810'
+    'revision': '2a34fe1c65cbb31a93c7d26c61eae043'
   },
   {
     'url': 'manifest.json',
     'revision': '6c7b98ba031dd8be76dbfe6f47b10542'
   },
   {
-    'url': 'script/index.js',
-    'revision': 'b2a2ef2f66aa4b8527263b344e9e5b82'
+    'url': 'script/todo-form.js',
+    'revision': '60982d45ec701762c60835c01009ce1c'
   },
   {
     'url': 'script/todo-list-item.js',
-    'revision': '6cb0ee42d7bc2bb224c1de251cbecfc5'
+    'revision': 'a1137e5a604e186d17b33cc13e90cadc'
   },
   {
     'url': 'script/todo-list.js',
-    'revision': '957c2b8a713f122fe6ed5dff02def938'
+    'revision': 'b1da7bbe0bf6447f29d109cac2b7375c'
   },
   {
     'url': 'script/util.js',
-    'revision': '3eb74228f7ba1624ce7788fa6989f1d9'
+    'revision': '6f054cc5bc51772b63984483229654e6'
   },
   {
     'url': 'style.css',
-    'revision': 'a0acf6555fe21249ecfce2d9e744102c'
+    'revision': '7ce7b9fcf8b9b78c7fd449aba8124f5e'
   },
   {
     'url': 'workbox-config.js',
-    'revision': 'b491607d4e8f3af0bf3684b3a9c556b2'
+    'revision': '6213275c01906ef09d3192260ed348e5'
   }
 ].concat(self.__precacheManifest || [])
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {})
