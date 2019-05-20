@@ -57,7 +57,7 @@ self.__precacheManifest = [
   },
   {
     'url': 'style.css',
-    'revision': '9cc7b3487c196f086e493bdb98ce5404'
+    'revision': 'e6885685cdd98d15999d83f4ad9ead17'
   },
   {
     'url': 'images/checkbox.png',

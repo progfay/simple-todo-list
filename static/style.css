@@ -115,7 +115,7 @@ div.todo-checkbox {
     transition: background-image 0.4s ease;
 }
 
-div.todo-checkbox[checked=true] {
+div.todo-checkbox[checked=false] {
     background-image: url('/images/checkbox.png');
 }
 
