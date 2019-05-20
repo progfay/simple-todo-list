@@ -1,6 +1,11 @@
 /* global localStorage, TodoListItem, HTMLElement, customElements */
 
 class TodoList extends HTMLElement {
+  constructor () {
+    super()
+    this.addTodo = this.addTodo.bind(this)
+  }
+
   connectedCallback () {
     const todoList = JSON.parse(localStorage.getItem('todoList') || '[]')
 
