@@ -10,16 +10,6 @@
     outline: none;
 }
 
-html,
-body {
-    width: 100vw;
-    height: 100vh;
-    background: #354d62;
-    color: #d7f2f7;
-    overflow: hidden;
-    overscroll-behavior: none;
-}
-
 button {
     display: inline-block;
     padding: 0.3em 1em;

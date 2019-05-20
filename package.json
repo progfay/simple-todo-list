@@ -10,7 +10,7 @@
     "deploy": "now --public dist",
     "prebuild": "rm -rf dist && cp -a static dist",
     "build": "run-s build:*",
-    "build:html": "html-minifier --remove-comments --collapse-whitespace static/index.html -o dist/index.html",
+    "build:html": "html-minifier --remove-comments --collapse-whitespace --minify-js true --minify-css true static/index.html -o dist/index.html",
     "build:css": "cleancss -o dist/style.css static/style.css",
     "prebuild:sw": "npm run sw",
     "build:sw": "uglifyjs --compress --mangle -o dist/sw.js static/sw.js",

@@ -25,6 +25,17 @@
     <link rel="canonical" href="https://simple-todo-list.progfay.now.sh">
     <link rel="preload" href="/images/checkbox.png" as="image">
     <link rel="preload" href="/images/checkbox-checked.png" as="image">
+    <style>
+        html,
+        body {
+            width: 100vw;
+            height: 100vh;
+            background: #354d62;
+            color: #d7f2f7;
+            overflow: hidden;
+            overscroll-behavior: none;
+        }
+    </style>
 </head>
 
 <body scroll="no">
@@ -50,11 +61,7 @@
     <script src="script/todo-list.js"></script>
     <script src="script/todo-form.js"></script>
     <script type="text/javascript">
-        if ("serviceWorker" in navigator) {
-            navigator.serviceWorker.register("/sw.js")
-                .then(({ scope }) => { console.log(`SW scope: ${scope}`) })
-                .catch(console.error)
-        }
+        if ('serviceWorker' in navigator) navigator.serviceWorker.register("sw.js")
     </script>
     <noscript>
         For full functionality of this site it is necessary to enable JavaScript. Here are the <a href="https://www.enable-javascript.com/">
