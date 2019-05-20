@@ -180,3 +180,11 @@ input.todo-checkbox:checked+div.todo-text {
         width: 480px;
     }
 }
+
+noscript {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5vw;
+}
