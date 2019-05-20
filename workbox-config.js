@@ -7,8 +7,7 @@ module.exports = {
     'images/icons/icon-512x512.png'
   ],
   'globIgnores': [
-    'now.json',
-    'workbox-config.js'
+    'now.json'
   ],
   'swDest': 'static/sw.js'
 }
