@@ -1,4 +1,4 @@
-/* global generateID, controlLocalStorage, HTMLElement, customElements */
+/* global generateID, updateLocalStorage, HTMLElement, customElements */
 
 const template = document.getElementById('todo-template').content
 
@@ -25,7 +25,7 @@ class TodoListItem extends HTMLElement {
       .addEventListener('click', this.deleteTodo, { once: true, passive: true })
     this.append(todo)
 
-    controlLocalStorage(todoList => {
+    updateLocalStorage(todoList => {
       if (!todoList.find(todo => todo.id === id)) {
         todoList.push({ id, text, checked })
       }
@@ -41,7 +41,7 @@ class TodoListItem extends HTMLElement {
   toggleCheck () {
     this.checked = !this.checked
     this.querySelector('input.todo-checkbox').checked = this.checked
-    controlLocalStorage(todoList =>
+    updateLocalStorage(todoList =>
       todoList.map(todo => {
         if (todo.id === this.id) todo.checked = this.checked
         return todo
@@ -51,7 +51,7 @@ class TodoListItem extends HTMLElement {
 
   deleteTodo (event) {
     this.remove()
-    controlLocalStorage(todoList =>
+    updateLocalStorage(todoList =>
       todoList.filter(todo => todo.id !== this.id)
     )
   }

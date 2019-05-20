@@ -2,9 +2,9 @@
 
 window.generateID = () => Math.random().toString(36).substr(2, 10)
 
-window.controlLocalStorage = control => {
+window.updateLocalStorage = update => {
   const todoList = localStorage.getItem('todoList')
-  const controled = JSON.stringify(control(JSON.parse(todoList)))
-  if (todoList === controled) return
-  localStorage.setItem('todoList', controled)
+  const updated = JSON.stringify(update(JSON.parse(todoList)))
+  if (todoList === updated) return
+  localStorage.setItem('todoList', updated)
 }
