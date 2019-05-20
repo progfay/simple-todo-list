@@ -18,8 +18,8 @@ class TodoListItem extends HTMLElement {
     const todo = template.cloneNode(true)
     const textNode = document.createTextNode(text)
     todo.querySelector('div.todo-text').appendChild(textNode)
-    todo.querySelector('input.todo-checkbox').checked = checked
-    todo.querySelector('input.todo-checkbox')
+    todo.querySelector('div.todo-checkbox').setAttribute('checked', checked)
+    todo.querySelector('div.todo-checkbox')
       .addEventListener('click', this.toggleCheck, { once: false, passive: true })
     todo.querySelector('button.delete-button')
       .addEventListener('click', this.deleteTodo, { once: true, passive: true })
@@ -34,13 +34,13 @@ class TodoListItem extends HTMLElement {
   }
 
   disconnectedCallback () {
-    this.querySelector('input.todo-checkbox')
+    this.querySelector('div.todo-checkbox')
       .removeEventListener('click', this.toggleCheck)
   }
 
   toggleCheck () {
     this.checked = !this.checked
-    this.querySelector('input.todo-checkbox').checked = this.checked
+    this.querySelector('div.todo-checkbox').setAttribute('checked', this.checked)
     updateLocalStorage(todoList =>
       todoList.map(todo => {
         if (todo.id === this.id) todo.checked = this.checked
