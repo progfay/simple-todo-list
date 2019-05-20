@@ -4,7 +4,7 @@ module.exports = {
     '**/*.{ico,html,json,js,css}',
     'images/checkbox.png',
     'images/checkbox-checked.png',
-    'images/icons/icon-512x512.png'
+    'images/logo.png'
   ],
   'globIgnores': [
     'now.json'

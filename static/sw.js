@@ -33,7 +33,7 @@ self.__precacheManifest = [
   },
   {
     'url': 'index.html',
-    'revision': '6a4fa5ff98817bfae9143b0279be15fb'
+    'revision': 'd5ed23651ac9be2108d0e1166474a70a'
   },
   {
     'url': 'manifest.json',
@@ -49,11 +49,11 @@ self.__precacheManifest = [
   },
   {
     'url': 'script/todo-list.js',
-    'revision': '01756b3969c85e37f044c39a84271c35'
+    'revision': 'bf225bafc88f1b562fd13b141e01c854'
   },
   {
     'url': 'style.css',
-    'revision': '38caca2561c58971a41ce6ccbad7b119'
+    'revision': '2a3d8809c898a56853b2ce3f1c1bc709'
   },
   {
     'url': 'images/checkbox.png',
@@ -64,8 +64,8 @@ self.__precacheManifest = [
     'revision': '1294bac69cf2811f38f63d7f924e0e28'
   },
   {
-    'url': 'images/icons/icon-512x512.png',
-    'revision': 'c665494f7339f1081378cf2f33f41181'
+    'url': 'images/logo.png',
+    'revision': '82ce003d3c0d0c6cf560103628d15fc0'
   }
 ].concat(self.__precacheManifest || [])
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {})

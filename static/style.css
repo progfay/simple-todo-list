@@ -36,10 +36,11 @@ header#header {
 }
 
 div#icon {
-    width: 25vmin;
-    height: 25vmin;
-    background-image: url('/images/icons/icon-512x512.png');
-    background-size: contain;
+    width: 32vmin;
+    height: 18vmin;
+    margin: 3vmin 0;
+    background-image: url('/images/logo.png');
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
