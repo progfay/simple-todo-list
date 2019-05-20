@@ -90,15 +90,15 @@ todo-list-item {
     margin: 5px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-label.todo-content {
+div.todo-content {
     display: flex;
     align-items: center;
 }
 
 div.todo-checkbox {
-    position: absolute;
     cursor: pointer;
     background-size: contain;
     width: 18px;
@@ -115,7 +115,7 @@ div.todo-checkbox[checked=true] {
 }
 
 div.todo-text {
-    margin-left: 24px;
+    margin-left: 6px;
     transition: color 0.4s ease;
 }
 
