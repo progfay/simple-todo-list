@@ -7,11 +7,8 @@ class TodoList extends HTMLElement {
   }
 
   connectedCallback () {
-    const todoList = JSON.parse(localStorage.getItem('todoList') || '[]')
-
-    for (const todo of todoList) {
-      this.addTodo(todo)
-    }
+    JSON.parse(localStorage.getItem('todoList') || '[]')
+      .forEach(todo => this.addTodo(todo))
   }
 
   addTodo (todo) {
